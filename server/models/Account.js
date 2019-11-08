@@ -31,7 +31,7 @@ const AccountSchema = new mongoose.Schema({
   theme: {
     type: String,
     default: 'light',
-  }
+  },
 });
 
 AccountSchema.statics.toAPI = doc => ({
