@@ -54,7 +54,7 @@ const LoginWindow = (props) => {
     </form>
     );
 };
-//buttons from w3 schools
+
 const SignupWindow = (props) => {
     return (
     <form id="signupForm" 
@@ -70,10 +70,6 @@ const SignupWindow = (props) => {
     <input id="pass" type="password" name="pass" placeholder="password"/>
     <label htmlFor="pass2">Password: </label>
     <input id="pass2" type="password" name="pass2" placeholder="retype password"/>
-    <select>
-        <option value="light" selected="selected">Light Theme</option>
-        <option value="dark">Dark Theme</option>
-    </select>
     <input type="hidden" name="_csrf" value={props.csrf}/>
     <input className="formSubmit" type="submit" value="Sign Up" />
 
