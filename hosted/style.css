@@ -33,6 +33,10 @@ nav:nth-child(1) {
     float: left;
 }
 
+#makeDomo{ 
+    width: 60vw;
+}
+
 .navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
     color: white;
     text-decoration: none;
