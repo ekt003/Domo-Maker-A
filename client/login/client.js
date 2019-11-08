@@ -71,7 +71,7 @@ const SignupWindow = (props) => {
     <label htmlFor="pass2">Password: </label>
     <input id="pass2" type="password" name="pass2" placeholder="retype password"/>
     <select>
-        <option value="light">Light Theme</option>
+        <option value="light" selected="selected">Light Theme</option>
         <option value="dark">Dark Theme</option>
     </select>
     <input type="hidden" name="_csrf" value={props.csrf}/>
