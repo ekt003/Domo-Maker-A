@@ -40,6 +40,7 @@ const signup = (request, response) => {
   req.body.username = `${req.body.username}`;
   req.body.pass = `${req.body.pass}`;
   req.body.pass2 = `${req.body.pass2}`;
+  req.body.theme = `${req.body.theme}`;
 
   if (!req.body.username || !req.body.pass || !req.body.pass2) {
     return res.status(400).json({ error: 'RAWR! All fields are required' });
@@ -53,6 +54,7 @@ const signup = (request, response) => {
   return Account.AccountModel.generateHash(req.body.pass, (salt, hash) => {
     const accountData = {
       username: req.body.username,
+      theme: req.body.theme,
       salt,
       password: hash,
     };
