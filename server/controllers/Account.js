@@ -38,6 +38,7 @@ const signup = (request, response) => {
   const res = response;
 
   req.body.username = `${req.body.username}`;
+  req.body.theme = `${req.body.theme}`;
   req.body.pass = `${req.body.pass}`;
   req.body.pass2 = `${req.body.pass2}`;
 
@@ -53,6 +54,7 @@ const signup = (request, response) => {
   return Account.AccountModel.generateHash(req.body.pass, (salt, hash) => {
     const accountData = {
       username: req.body.username,
+      theme: req.body.theme,
       salt,
       password: hash,
     };
